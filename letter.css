@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Whisper&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('starfall-gif-46.gif') center/cover no-repeat;
+}
+
+.image-container {
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.popup.open {
+    display: block;
+    opacity: 1; /* Transition to full opacity when open */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #3498db; /* Blue color for the close button */
+}
+
+.popup-image {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 10px 0;
+}
+
+.text {
+    height: 450px;
+    width: 1100px;
+    font-family: 'Poppins';
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+h3 {
+    text-align: left;
+    text-transform: uppercase;
+}
